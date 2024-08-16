@@ -303,6 +303,14 @@ figure {
   margin: 0 0 1rem;
 }
 
+.logo__img{
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -6px;
+}
+
 img,
 svg {
   vertical-align: middle;
