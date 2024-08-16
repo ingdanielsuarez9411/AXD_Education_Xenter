@@ -1,0 +1,27 @@
+<style>
+
+body,h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-bar,h1,button {font-family: "Open Sans", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+
+.bkg{
+    background-image: url(/assets/images/Web\ Site.png);
+    height: 50%;
+    background-position: center;
+    background-size: cover;
+    position:relative;
+  }
+
+  .layout{
+    position: relative;
+    min-width: 1120px;
+    width: 75%;
+    height: 80vh;
+    min-height: 80vh;
+    margin: 10vh auto;
+    display: grid;
+    grid-template-areas: 
+        "aside content";
+    grid-template-columns: 30% 70%;
+
+</style>
