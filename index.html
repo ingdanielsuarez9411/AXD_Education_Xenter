@@ -1,230 +1,929 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>Libranza Go - Landing Page</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" type="text/css" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body>
-        <!-- Navigation-->
-        <nav class="navbar navbar-light bg-light static-top">
-            <div class="container">
-                <img src="./assets/images/Logo_web.png" alt="logo_libranzago">
-                <div class="col-lg-6 h-100 text-center text-lg-end my-auto">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item me-4">
-                            <a href="#!"><i class="bi-facebook fs-3"></i></a>
-                        </li>
-                        <li class="list-inline-item me-4">
-                            <a href="https://api.whatsapp.com/send?phone=573212965799&text=Deseo%20m%C3%A1s%20informaci%C3%B3n!"><i class="bi-whatsapp fs-3"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="#!"><i class="bi-instagram fs-3"></i></a>
-                        </li>
-                    </ul>
-                </div>
-                <a class="btn btn-secondary" target="_blank"  href="login.html">Iniciar Sesión</a>
-            </div>
-        </nav>
-        <!-- Masthead-->
-        <header class="masthead">
-            <div class="container position-relative">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6">
-                        <div class="text-center text-white">
-                            <!-- Page heading-->
-                            <h1 class="mb-5">ASESORIAS JL BAMON SAS te da la bienvenida. Déjanos tu número y un Asesor te contactará!</h1>
-                            <!-- Signup form-->
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- * * SB Forms Contact Form * *-->
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- This form is pre-integrated with SB Forms.-->
-                            <!-- To make this form functional, sign up at-->
-                            <!-- https://startbootstrap.com/solution/contact-forms-->
-                            <!-- to get an API token!-->
-                            <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
-                                <!-- Email address input-->
-                                <div class="row">
-                                    <div class="col">
-                                        <input class="form-control form-control-lg" id="emailAddress" type="number" placeholder="Número de Contacto" data-sb-validations="required,email" />
-                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:required">Número de Contacto requerido.</div>
-                                        <div class="invalid-feedback text-white" data-sb-feedback="emailAddress:email">Número de Contacto no válido</div>
-                                    </div>
-                                    <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                                </div>
-                                <!-- Submit success message-->
-                                <!---->
-                                <!-- This is what your users will see when the form-->
-                                <!-- has successfully submitted-->
-                                <div class="d-none" id="submitSuccessMessage">
-                                    <div class="text-center mb-3">
-                                        <div class="fw-bolder">Solicitud de contacto enviada!</div>
-                                    </div>
-                                </div>
-                                <!-- Submit error message-->
-                                <!---->
-                                <!-- This is what your users will see when there is-->
-                                <!-- an error submitting the form-->
-                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error enviando mensaje!</div></div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <!-- Image Showcases-->
-        <section class="showcase">
-            <div class="container-fluid p-0">
-                <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/images/2-Material\ Libranza\ GO.png')"></div>
-                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2>Créditos para diferentes perfiles</h2>
-                        <p class="lead mb-0">Accesibilidad a un mundo de soluciones financieras!</p>
-                    </div>
-                </div>
-                <div class="row g-0">
-                    <div class="col-lg-6 text-white showcase-img" style="background-image: url('assets/images/3-Material\ Libranza\ GO.png')"></div>
-                    <div class="col-lg-6 my-auto showcase-text">
-                        <h2>¿No eres pensionado? No te preocupes!</h2>
-                        <p class="lead mb-0">Con Libranza Go prestamos a empleadores, rentistas e independientes.</p>
-                    </div>
-                </div>
-                <div class="row g-0">
-                    <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('assets/images/1-Material\ Libranza\ GO.png')"></div>
-                    <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-                        <h2>¿Estás Reportado en Centrales de Riesgo? Eso ya no es un problema.</h2>
-                        <p class="lead mb-0">Podemos prestarte también aunque estés reportado en Centrales de Riesgo (Sujeto a políticas)</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Testimonials-->
-        <section class="testimonials text-center bg-light">
-            <div class="container">
-                <h2 class="mb-5">Lo que nuestros clientes dicen...</h2>
-                <div class="row">
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-1.jpg" alt="..." />
-                            <h5>Margaret E.</h5>
-                            <p class="font-weight-light mb-0">"Fántastico, Libranza Go me sacó de deudas y ahora puedo disfrutar de mi vejéz sin preocupaciones..."</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-2.jpg" alt="..." />
-                            <h5>Fred S.</h5>
-                            <p class="font-weight-light mb-0">"Realmente necesibaba una asesoría especializada, no sabía que hacer con tantas deudas..."</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="testimonial-item mx-auto mb-5 mb-lg-0">
-                            <img class="img-fluid rounded-circle mb-3" src="assets/img/testimonials-3.jpg" alt="..." />
-                            <h5>Sarah W.</h5>
-                            <p class="font-weight-light mb-0">"De verdad que me ayudaron mucho, el proceso fue efectivo y me generó confianza..."</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Call to Action-->
-        <section class="call-to-action text-white text-center" id="signup">
-            <div class="container position-relative">
-                <div class="row justify-content-center">
-                    <div class="col-xl-6">
-                        <h2 class="mb-4">Listo para iniciar? Déjanos tu e-mail y te contactamos!</h2>
-                        <!-- Signup form-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form class="form-subscribe" id="contactFormFooter" data-sb-form-api-token="API_TOKEN">
-                            <!-- Email address input-->
-                            <div class="row">
-                                <div class="col">
-                                    <input class="form-control form-control-lg" id="emailAddressBelow" type="email" placeholder="Email Address" data-sb-validations="required,email" />
-                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:required">Email Address is required.</div>
-                                    <div class="invalid-feedback text-white" data-sb-feedback="emailAddressBelow:email">Email Address Email is not valid.</div>
-                                </div>
-                                <div class="col-auto"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Submit</button></div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    <p>To activate this form, sign up at</p>
-                                    <a class="text-white" href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Footer-->
-        <footer class="footer bg-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6 h-100 text-center text-lg-start my-auto">
-                        <ul class="list-inline mb-2">
-                            <li class="list-inline-item"><a href="index.html">Nosotros</a></li>
-                            <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="#!">Contáctanos</a></li>
-                            <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="terms.html">Términos de Uso</a></li>
-                            <li class="list-inline-item">⋅</li>
-                            <li class="list-inline-item"><a href="polices.html">Políticas de Datos</a></li>
-                        </ul>
-                        <p class="text-muted small mb-4 mb-lg-0">&copy; Libranza Go 2024. Todos los Derechos Reservados con la Tecnología de Suarez Tech.</p>
-                    </div>
-                    <!-- <script>
-                        var url = 'https://app.wasapi.io/cdn/scripts/wasapiWidgetChat.js';
-                        var s = document.createElement('script');
-                        s.type = 'text/javascript';
-                        s.async = true;
-                        s.src = url;
-                        var options = {"active":1,"sentPhone":"573133511334","userMessage":"Deseo más información!","customer":"ce5414ac-b0eb-47d1-975c-f797b3677bc7","mainButton":{"position":"right","marginBottom":"30","borderRadius":"10","text":"Escríbenos vía WhatsApp","marginLeft":50,"marginRight":"12","backgroundColor":"#399B53"},"chatCard":{"show":1,"backgroundColor":"#399B53","borderRadius":10,"avatarUrl":"","title":"Libranza Go","subtitle":"En línea","messageTitle":"Asesor Especializado","messageContent":"No dejes pasar esta gran oportunidad!","sendButtonText":"Deseo chatear con alguien!"}};
-                        s.addEventListener('load', function () {
-                          wasapiWidgetInit(options);
-                        });
-                        var x = document.getElementsByTagName('script')[0];
-                        x.parentNode.insertBefore(s, x);
-                      </script> -->
-                </div>
-            </div>
-        </footer>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <!-- * *                               SB Forms JS                               * *-->
-        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
-        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proceso de Admisión - AXD Education Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Definición de variables CSS para la paleta de dorado */
+        :root {
+            --gold-light: #FFDF00; /* Oro brillante */
+            --gold-mid: #D4AF37;   /* Oro metálico base */
+            --gold-dark: #A88F1E;  /* Oro más oscuro para sombras */
+            --gold-shadow-light: rgba(255, 223, 0, 0.4);
+            --gold-shadow-dark: rgba(168, 143, 30, 0.6);
+            --bg-gold-gradient: linear-gradient(135deg, #FFDF00 0%, #D4AF37 50%, #A88F1E 100%);
+            --text-gold-gradient: linear-gradient(to right, #FFF599, #FFD700, #DAA520, #B8860B);
+            --chat-bg-dark: #383838; /* Fondo oscuro para el chat */
+            --chat-text-color: #f0f0f0; /* Color de texto claro para el chat */
+        }
 
-        <!-- Script Go Contact Chat -->
-        <script id="script_of_FSWebChat" type="text/javascript">    window.FSWebChat || (function(d, s) {        var fs = FSWebChat = function() {};        fs._s = d.createElement(s);        fs._h = d.getElementsByTagName(s)[0];        fs._domain = 'e707cd57-9295-4238-a0b5-0fede1a41ece';        fs._hashkey = '22533968dca1d69a42641471ba008fccdcd89939';        fs._subfolder = '';        fs._server = 'https://co-l1-cloud1.gocontact.com:443/poll';        fs._service = '/new-webchat-service';        fs._timestamp = +new Date;        fs._s.setAttribute("charset", "utf-8");        fs._s.src = fs._server + fs._service + "/startup/" + fs._domain + "/" + fs._hashkey;        fs._s.type = 'text/javascript';        fs._s.async = true;        fs._h.parentNode.insertBefore(fs._s, fs._h);    })(document, "script");</script>
-    </body>
+        body {
+            font-family: 'Montserrat', sans-serif; /* Aplicar Montserrat a todo el cuerpo */
+            margin: 0;
+            padding: 0;
+            background-color: #2c2c2c; /* Fondo oscuro para que el dorado resalte */
+            color: #333;
+            /* Nueva URL de fondo de imagen */
+            background-image: url('https://usabana.widen.net/content/5f2c2365-a541-4581-9701-44e49e3e5dd7/web/Campus.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .university-banner {
+            background-color: #383838; /* Un fondo más oscuro para el banner */
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5); /* Sombra más pronunciada */
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--gold-mid);
+        }
+
+        .university-banner .gold-text {
+            font-family: 'Montserrat', sans-serif; /* Aplicar Montserrat */
+            font-size: 38px;
+            margin: 0;
+            font-weight: 700; /* Bold */
+            letter-spacing: 2px; /* Un poco de espaciado para el look */
+            text-transform: uppercase;
+            
+            /* Efecto de texto dorado metalizado */
+            background: var(--text-gold-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5)); /* Sombra para el texto */
+            -webkit-text-stroke: 0.5px rgba(255, 255, 255, 0.2); /* Borde sutil */
+        }
+        
+        .university-banner .tagline {
+            font-family: 'Montserrat', sans-serif; /* Aplicar Montserrat */
+            font-size: 18px;
+            color: var(--gold-light);
+            margin-left: 20px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+            letter-spacing: 1px;
+            font-weight: 500; /* Medium */
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            flex-grow: 1; /* Permite que el contenedor se expanda */
+        }
+
+        .header-steps {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .step-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            flex: 1;
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+            padding: 0 5px;
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .step-item:hover {
+            transform: translateY(-3px); /* Pequeño efecto hover */
+        }
+
+        .step-circle {
+            width: 45px; /* Un poco más grande */
+            height: 45px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #CCC, #E0E0E0); /* Gris claro inicial */
+            color: #555;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600; /* Semi-bold */
+            margin-bottom: 8px;
+            transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2), 0 2px 5px rgba(0, 0, 0, 0.3);
+            font-size: 18px;
+        }
+
+        .step-title {
+            font-size: 13px;
+            color: #666;
+            transition: color 0.3s;
+            font-weight: 500; /* Medium */
+        }
+
+        .step-item.active .step-circle {
+            background: var(--bg-gold-gradient); /* Dorado activo */
+            color: #fff;
+            box-shadow: inset 0 0 8px var(--gold-shadow-light), 0 3px 8px var(--gold-shadow-dark);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+        }
+
+        .step-item.completed .step-circle {
+            background: linear-gradient(45deg, var(--gold-mid), var(--gold-dark)); /* Dorado más oscuro para completado */
+            color: #fff;
+            box-shadow: inset 0 0 5px var(--gold-shadow-dark), 0 2px 5px rgba(0, 0, 0, 0.4);
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+        }
+
+        .step-item.active .step-title,
+        .step-item.completed .step-title {
+            color: var(--gold-dark);
+            font-weight: 600; /* Semi-bold */
+        }
+
+        .header-steps::before {
+            content: '';
+            position: absolute;
+            top: 22px; /* Ajustar posición de la línea */
+            left: 0;
+            right: 0;
+            height: 3px; /* Línea más gruesa */
+            background-color: #e0e0e0;
+            z-index: 0;
+        }
+
+        .progress-line {
+            position: absolute;
+            top: 22px; /* Ajustar posición de la línea */
+            left: 0;
+            height: 3px; /* Línea más gruesa */
+            background: var(--bg-gold-gradient); /* Degradado dorado para la línea de progreso */
+            z-index: 0;
+            transition: width 0.3s ease-in-out;
+        }
+
+
+        .content-section {
+            background-color: #fdfdfd;
+            border: 1px solid #eee;
+            border-radius: 6px;
+            padding: 25px;
+            min-height: 350px;
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05); /* Sombra interna sutil */
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 15px;
+        }
+
+        .section-title {
+            font-size: 26px; /* Título un poco más grande */
+            font-weight: 700; /* Bold */
+            color: var(--gold-dark); /* Color dorado oscuro */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-subtitle {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 20px;
+            font-weight: 400; /* Regular */
+        }
+
+        .content-layout {
+            display: flex;
+            gap: 30px;
+        }
+
+        .tasks-column {
+            flex: 2;
+            padding-right: 20px;
+            border-right: 1px solid #eee;
+        }
+
+        .info-column {
+            flex: 1;
+            padding-left: 20px;
+        }
+
+        .task-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .task-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 15px;
+            margin-bottom: 8px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.2s, box-shadow 0.2s;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .task-item:hover {
+            background-color: #f0f0f0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+        }
+
+        .task-item.active-task {
+            background-color: #fce89e; /* Amarillo para la tarea activa */
+            font-weight: 600; /* Semi-bold */
+            border-left: 5px solid var(--gold-mid); /* Borde dorado */
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .task-item.completed-task {
+            background-color: #e6ffe6; /* Verde claro para completado */
+            border-left: 5px solid #28a745; /* Borde verde */
+            opacity: 0.9;
+        }
+
+        .task-item input[type="checkbox"] {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+            accent-color: var(--gold-mid); /* Color del checkbox */
+        }
+
+        .task-details {
+            flex-grow: 1;
+        }
+
+        .task-label {
+            font-size: 15px;
+            color: #333;
+            font-weight: 500; /* Medium */
+        }
+
+        .task-sublabel {
+            font-size: 12px;
+            color: #888;
+            font-weight: 400; /* Regular */
+        }
+
+        .info-box {
+            background-color: #fdfaf3; /* Fondo más suave en tonos dorados */
+            border: 1px solid var(--gold-light);
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .info-box h4 {
+            margin-top: 0;
+            color: var(--gold-dark); /* Título en dorado oscuro */
+            font-size: 16px;
+            border-bottom: 1px dashed var(--gold-light);
+            padding-bottom: 5px;
+            font-weight: 600; /* Semi-bold */
+        }
+
+        .info-box ul {
+            list-style: disc;
+            padding-left: 20px;
+            margin: 0;
+            font-size: 14px;
+            color: #333;
+            font-weight: 400; /* Regular */
+        }
+
+        .info-box li {
+            margin-bottom: 5px;
+        }
+
+        .current-task-display {
+            background-color: #fff9e6; /* Amarillo más suave */
+            border: 1px solid var(--gold-mid);
+            border-radius: 5px;
+            padding: 15px;
+            margin-top: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .current-task-display h4 {
+            margin-top: 0;
+            color: var(--gold-dark); /* Título en dorado oscuro */
+            font-size: 16px;
+            border-bottom: 1px dashed var(--gold-light);
+            padding-bottom: 5px;
+            font-weight: 600; /* Semi-bold */
+        }
+
+        .current-task-display p {
+            margin: 0;
+            font-size: 14px;
+            color: #333;
+            font-weight: 400; /* Regular */
+        }
+
+        .contact-button {
+            display: block;
+            width: fit-content;
+            padding: 12px 25px;
+            background: var(--bg-gold-gradient); /* Botón con degradado dorado */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 20px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600; /* Semi-bold */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: all 0.2s ease-in-out;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+        }
+
+        .contact-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .nav-button {
+            padding: 10px 20px;
+            background-color: #555; /* Botones de navegación en gris oscuro */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            font-weight: 500; /* Medium */
+        }
+
+        .nav-button:hover {
+            background-color: #777;
+            transform: translateY(-1px);
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-button.primary {
+            background: var(--bg-gold-gradient); /* Botón primario en dorado */
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+            font-weight: 600; /* Semi-bold */
+        }
+
+        .nav-button.primary:hover {
+            background: linear-gradient(135deg, var(--gold-mid) 0%, var(--gold-light) 50%, var(--gold-dark) 100%); /* Efecto hover dorado */
+            transform: translateY(-2px);
+        }
+
+        .nav-button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+            box-shadow: none;
+            transform: none;
+        }
+
+        /* --- Chatbot Widget Styles --- */
+        .chatbot-widget {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            z-index: 1000;
+        }
+
+        .chatbot-toggle-button {
+            width: 70px; /* Ajusta el tamaño según tu imagen */
+            height: 70px;
+            border-radius: 50%;
+            /* URL de la imagen del bot. RECUERDA REEMPLAZAR ESTA URL CON LA TUYA */
+            background-image: url('https://tse2.mm.bing.net/th/id/OIP.KZeuIeR05TW5Hr9mlsLTMwHaHa?r=0&rs=1&pid=ImgDetMain&o=7&rm=3'); 
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+            /* Estos estilos aseguran que solo se vea la imagen */
+            color: transparent; 
+            text-shadow: none;
+            overflow: hidden; 
+        }
+
+        .chatbot-toggle-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .chatbot-chat-window {
+            width: 350px;
+            height: 450px;
+            background-color: var(--chat-bg-dark); /* Fondo oscuro del chat */
+            border-radius: 10px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.6);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            position: absolute;
+            bottom: 85px; /* Ajustado para estar encima del nuevo botón más grande */
+            right: 0;
+            transform: scale(0.8);
+            opacity: 0;
+            pointer-events: none;
+            transition: all 0.3s ease-out;
+            transform-origin: bottom right;
+            border: 2px solid var(--gold-mid); /* Borde dorado más prominente */
+        }
+
+        .chatbot-chat-window.open {
+            transform: scale(1);
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .chat-header {
+            background: linear-gradient(to right, var(--gold-mid), var(--gold-dark)); /* Cabecera del chat en dorado */
+            color: var(--chat-text-color);
+            padding: 15px;
+            font-size: 18px;
+            font-weight: 600; /* Semi-bold */
+            border-bottom: 2px solid var(--gold-light); /* Borde inferior dorado más prominente */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+
+        .chat-messages {
+            flex-grow: 1;
+            padding: 15px;
+            overflow-y: auto;
+            background-color: #4a4a4a; /* Fondo más claro para los mensajes */
+            color: var(--chat-text-color);
+            font-weight: 400; /* Regular */
+        }
+
+        .message-container {
+            margin-bottom: 10px;
+            display: flex;
+        }
+
+        .message-container.user {
+            justify-content: flex-end;
+        }
+
+        .message-container.bot {
+            justify-content: flex-start;
+        }
+
+        .message {
+            max-width: 80%;
+            padding: 10px 15px;
+            border-radius: 15px;
+            line-height: 1.4;
+            word-wrap: break-word;
+            font-weight: 400; /* Regular */
+        }
+
+        .message.user {
+            background-color: var(--gold-mid); /* Burbuja de usuario en dorado */
+            color: #fff;
+            border-bottom-right-radius: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .message.bot {
+            background-color: #5a5a5a; /* Burbuja del bot en gris oscuro */
+            color: var(--chat-text-color);
+            border-bottom-left-radius: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .chat-input {
+            display: flex;
+            padding: 10px 15px;
+            background-color: var(--chat-bg-dark);
+            border-top: 2px solid var(--gold-light); /* Borde superior en dorado más prominente */
+        }
+
+        .chat-input input {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #777;
+            border-radius: 20px;
+            background-color: #666;
+            color: var(--chat-text-color);
+            outline: none;
+            font-size: 14px;
+            margin-right: 10px;
+            font-weight: 400; /* Regular */
+        }
+
+        .chat-input input::placeholder {
+            color: #bbb;
+        }
+
+        .chat-input button {
+            background: var(--bg-gold-gradient); /* Botón de enviar en dorado */
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            transition: background 0.2s, transform 0.2s;
+            font-weight: 600; /* Semi-bold */
+        }
+
+        .chat-input button:hover {
+            background: linear-gradient(135deg, var(--gold-light), var(--gold-mid));
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="university-banner">
+        <h1 class="gold-text">AXD Education Center</h1>
+        <p class="tagline">Xenter y Propulsor</p>
+    </div>
+
+    <div class="container">
+        <div class="header-steps" id="headerSteps">
+            <div class="progress-line" id="progressLine"></div>
+            <div class="step-item active" data-step="1">
+                <div class="step-circle">1</div>
+                <div class="step-title">Explora tu programa</div>
+            </div>
+            <div class="step-item" data-step="2">
+                <div class="step-circle">2</div>
+                <div class="step-title">Solicita información</div>
+            </div>
+            <div class="step-item" data-step="3">
+                <div class="step-circle">3</div>
+                <div class="step-title">Envía tu postulación</div>
+            </div>
+            <div class="step-item" data-step="4">
+                <div class="step-circle">4</div>
+                <div class="step-title">Revisa tu admisión</div>
+            </div>
+            <div class="step-item" data-step="5">
+                <div class="step-circle">5</div>
+                <div class="step-title">Realiza tu matrícula</div>
+            </div>
+        </div>
+
+        <div class="content-section" id="contentSection">
+            </div>
+
+        <div class="navigation-buttons">
+            <button class="nav-button" id="prevBtn" style="display: none;">Anterior</button>
+            <button class="nav-button primary" id="nextBtn">Siguiente</button>
+        </div>
+    </div>
+
+    <div class="chatbot-widget">
+        <div class="chatbot-chat-window" id="chatWindow">
+            <div class="chat-header">Soporte AXD</div>
+            <div class="chat-messages" id="chatMessages">
+                </div>
+            <div class="chat-input">
+                <input type="text" id="chatInput" placeholder="Escribe tu pregunta...">
+                <button id="sendMessageBtn">➤</button>
+            </div>
+        </div>
+        <button class="chatbot-toggle-button" id="chatToggleButton"></button>
+    </div>
+
+    <script>
+        // --- Existing Page Logic (Unchanged) ---
+        const stepsData = [
+            {
+                id: 1,
+                title: "Explora tu programa",
+                subtitle: "Nuestro equipo te guía para encontrar el programa ideal según tus intereses.",
+                tasks: [
+                    { label: "Ver programas disponibles", responsible: "Tú", completed: false, active: true },
+                    { label: "Usar el simulador de perfil", responsible: "Tú", completed: false },
+                    { label: "Agendar asesoría personalizada", responsible: "Tú", completed: false }
+                ],
+                accompaniment: "Área de promoción y mercadeo",
+                activeTaskDisplay: "Revisa el catálogo de programas disponibles",
+                notes: ["Recuerda que la elección de tu programa es clave para tu futuro académico y profesional."]
+            },
+            {
+                id: 2,
+                title: "Solicita información",
+                subtitle: "Estamos enviándote más detalles sobre el programa que te interesa.",
+                tasks: [
+                    { label: "Completa el formulario de contacto", responsible: "Tú", completed: false },
+                    { label: "Participa en un webinar informativo", responsible: "Tú", completed: false, active: true },
+                    { label: "Chatea con un asesor", responsible: "Tú", completed: false }
+                ],
+                accompaniment: "Asesor académico asignado",
+                activeTaskDisplay: "Participar en el webinar programado",
+                notes: ["La información que te enviamos es personalizada según tus intereses.", "No dudes en preguntar todas tus dudas a tu asesor."]
+            },
+            {
+                id: 3,
+                title: "Envía tu postulación",
+                subtitle: "Tu solicitud está siendo revisada por nuestro equipo de admisiones.",
+                tasks: [
+                    { label: "Completa tu aplicación en línea", responsible: "Tú", completed: false },
+                    { label: "Adjunta documentos requeridos", responsible: "Tú", completed: false },
+                    { label: "Paga derechos de inscripción (si aplica)", responsible: "Tú", completed: false, active: true }
+                ],
+                accompaniment: "Oficina de admisiones",
+                activeTaskDisplay: "Cargar certificados de notas",
+                notes: ["Asegúrate de que todos tus documentos estén completos y sean legibles.", "El proceso de postulación es el primer paso oficial hacia tu admisión."]
+            },
+            {
+                id: 4,
+                title: "Revisa tu admisión",
+                subtitle: "Estamos evaluando tu solicitud. Pronto recibirás respuesta.",
+                tasks: [
+                    { label: "Esperar confirmación o entrevista", responsible: "Universidad", completed: false },
+                    { label: "Revisar notificación de admisión", responsible: "Universidad", completed: false, active: true },
+                    { label: "Aceptar tu cupo", responsible: "Universidad", completed: false }
+                ],
+                accompaniment: "Comité de admisiones",
+                activeTaskDisplay: "Confirmar aceptación del cupo",
+                notes: ["Mantente atento a tu correo electrónico y a la plataforma para notificaciones.", "La decisión de admisión se basa en una evaluación integral de tu perfil."]
+            },
+            {
+                id: 5,
+                title: "Realiza tu matrícula",
+                subtitle: "¡Estás a un paso de ser parte de la universidad!",
+                tasks: [
+                    { label: "Realiza el pago de matrícula", responsible: "Tú", completed: false, active: true },
+                    { label: "Firma documentos de ingreso", responsible: "Tú", completed: false },
+                    { label: "Accede a la plataforma de estudiantes", responsible: "Tú", completed: false }
+                ],
+                accompaniment: "Finanzas y Registro académico",
+                activeTaskDisplay: "Realizar pago de matrícula",
+                notes: ["Felicidades, ¡estás a punto de iniciar tu vida universitaria!", "Revisa los plazos de pago y los documentos necesarios para la matrícula."]
+            }
+        ];
+
+        let currentStep = 1;
+
+        const headerSteps = document.getElementById('headerSteps');
+        const contentSection = document.getElementById('contentSection');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const progressLine = document.getElementById('progressLine');
+
+        function checkAllTasksCompleted(stepId) {
+            const stepData = stepsData.find(step => step.id === stepId);
+            if (!stepData) return false;
+            return stepData.tasks.every(task => task.completed);
+        }
+
+        function updateNextButtonState() {
+            const allTasksCompleted = checkAllTasksCompleted(currentStep);
+            nextBtn.disabled = !allTasksCompleted && currentStep < stepsData.length;
+        }
+
+        function renderStep(stepId) {
+            const stepData = stepsData.find(step => step.id === stepId);
+            if (!stepData) return;
+
+            // Update header steps
+            document.querySelectorAll('.step-item').forEach(item => {
+                const itemStepId = parseInt(item.dataset.step);
+                item.classList.remove('active', 'completed');
+                if (itemStepId < stepId) {
+                    item.classList.add('completed');
+                } else if (itemStepId === stepId) {
+                    item.classList.add('active');
+                }
+            });
+
+            // Update progress line
+            const totalSteps = stepsData.length;
+            const progress = (stepId - 1) / (totalSteps - 1) * 100;
+            progressLine.style.width = `${progress}%`;
+
+            // Render content
+            contentSection.innerHTML = `
+                <div class="section-header">
+                    <div class="section-title">${stepData.title}</div>
+                    <div class="section-task-info">Tarea ${stepData.id} de ${totalSteps}</div>
+                </div>
+                <div class="section-subtitle">${stepData.subtitle}</div>
+                <div class="content-layout">
+                    <div class="tasks-column">
+                        <h4>Tareas</h4>
+                        <ul class="task-list" id="taskList">
+                            ${stepData.tasks.map((task, index) => `
+                                <li class="task-item ${task.active ? 'active-task' : ''} ${task.completed ? 'completed-task' : ''}" data-task-index="${index}">
+                                    <input type="checkbox" id="task-${stepId}-${index}" ${task.completed ? 'checked' : ''}>
+                                    <label for="task-${stepId}-${index}" class="task-details">
+                                        <div class="task-label">${task.label}</div>
+                                        <div class="task-sublabel">Responsable: ${task.responsible}</div>
+                                    </label>
+                                </li>
+                            `).join('')}
+                        </ul>
+                    </div>
+                    <div class="info-column">
+                        <div class="info-box">
+                            <h4>Ten en cuenta:</h4>
+                            <ul>
+                                ${stepData.notes.map(note => `<li>${note}</li>`).join('')}
+                            </ul>
+                        </div>
+                        <div class="current-task-display">
+                            <h4>📍 Tarea activa:</h4>
+                            <p>${stepData.activeTaskDisplay}</p>
+                        </div>
+                        <a href="#" class="contact-button">Contáctanos</a>
+                    </div>
+                </div>
+            `;
+
+            // Add event listeners for checkboxes
+            const taskList = document.getElementById('taskList');
+            if (taskList) {
+                taskList.addEventListener('change', (event) => {
+                    if (event.target.type === 'checkbox') {
+                        const taskItem = event.target.closest('.task-item');
+                        const taskIndex = parseInt(taskItem.dataset.taskIndex);
+                        stepsData[currentStep - 1].tasks[taskIndex].completed = event.target.checked;
+                        taskItem.classList.toggle('completed-task', event.target.checked);
+                        updateNextButtonState(); // Re-evaluate next button state
+                    }
+                });
+            }
+
+            // Update navigation buttons visibility and state
+            prevBtn.style.display = stepId === 1 ? 'none' : 'block';
+            nextBtn.textContent = stepId === totalSteps ? 'Finalizar' : 'Siguiente';
+            updateNextButtonState(); // Set initial state for next button
+        }
+
+        function goToStep(stepId) {
+            if (stepId >= 1 && stepId <= stepsData.length) {
+                currentStep = stepId;
+                renderStep(currentStep);
+            }
+        }
+
+        // Event listeners for step clicks in header (direct navigation to any step)
+        headerSteps.addEventListener('click', (event) => {
+            let target = event.target;
+            while (target && !target.classList.contains('step-item')) {
+                target = target.parentNode;
+            }
+            if (target && target.classList.contains('step-item')) {
+                const stepId = parseInt(target.dataset.step);
+                // A user can jump to any step <= currentStep. If they want to jump ahead,
+                // they must have completed all tasks in the *previous* step.
+                if (stepId <= currentStep) {
+                     goToStep(stepId);
+                } else if (stepId > currentStep && checkAllTasksCompleted(currentStep)) {
+                    // Only allow moving to next step if current step is completed
+                    // For jumping multiple steps, this logic could be enhanced to check all intermediate steps
+                    goToStep(stepId);
+                } else {
+                    alert('Por favor, completa todas las tareas de la etapa actual para avanzar.');
+                }
+            }
+        });
+
+        // Event listeners for navigation buttons
+        prevBtn.addEventListener('click', () => {
+            goToStep(currentStep - 1);
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentStep < stepsData.length) {
+                if (checkAllTasksCompleted(currentStep)) {
+                    goToStep(currentStep + 1);
+                } else {
+                    alert('Por favor, completa todas las tareas de esta etapa para avanzar.');
+                }
+            } else {
+                alert('¡Proceso de admisión completado!');
+                // Here you can add logic to submit data or redirect
+            }
+        });
+
+        // Initial render
+        renderStep(currentStep);
+
+        // --- Chatbot Logic ---
+        const chatToggleButton = document.getElementById('chatToggleButton');
+        const chatWindow = document.getElementById('chatWindow');
+        const chatMessages = document.getElementById('chatMessages');
+        const chatInput = document.getElementById('chatInput');
+        const sendMessageBtn = document.getElementById('sendMessageBtn');
+
+        let chatOpen = false;
+
+        // Simple knowledge base for the bot
+        const knowledgeBase = {
+            "programa": "Para explorar los programas disponibles, puedes visitar la sección 'Explora tu programa' en el paso 1.",
+            "postulación": "La postulación se realiza en el paso 3. Asegúrate de completar tu aplicación en línea y adjuntar los documentos.",
+            "admisión": "El estado de tu admisión se revisa en el paso 4. Te notificaremos pronto.",
+            "matrícula": "El proceso de matrícula se lleva a cabo en el paso 5. Necesitarás realizar el pago y firmar documentos.",
+            "contacto": "Si necesitas contactar a un asesor, busca el botón 'Contáctanos' en cada etapa del proceso.",
+            "documentos": "Los documentos requeridos para la postulación se detallan en el paso 3. Por favor, revisa esa sección.",
+            "pago": "El pago de derechos de inscripción o matrícula se gestiona en los pasos 3 y 5, respectivamente.",
+            "webinar": "Puedes participar en nuestros webinars informativos en el paso 2 para obtener más detalles.",
+            "ayuda": "Estoy aquí para ayudarte con preguntas sobre el proceso de admisión. Pregúntame sobre 'programas', 'postulación', 'matrícula', etc."
+        };
+
+        function toggleChat() {
+            chatOpen = !chatOpen;
+            chatWindow.classList.toggle('open', chatOpen);
+            if (chatOpen) {
+                chatInput.focus();
+                scrollToBottom();
+                if (chatMessages.children.length === 0) { // Welcome message only on first open
+                    appendMessage("¡Hola! Soy tu asistente virtual de AXD Education Center. ¿En qué puedo ayudarte hoy? Puedes preguntar sobre 'programas', 'postulación', 'matrícula', etc.", 'bot');
+                }
+            }
+        }
+
+        function appendMessage(text, sender) {
+            const messageContainer = document.createElement('div');
+            messageContainer.classList.add('message-container', sender);
+            
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('message', sender);
+            messageDiv.textContent = text;
+            
+            messageContainer.appendChild(messageDiv);
+            chatMessages.appendChild(messageContainer);
+            scrollToBottom();
+        }
+
+        function scrollToBottom() {
+            chatMessages.scrollTop = chatMessages.scrollHeight;
+        }
+
+        function processUserInput(input) {
+            const lowerInput = input.toLowerCase();
+            let botResponse = "Lo siento, no pude encontrar una respuesta a tu pregunta. Por favor, intenta reformularla o usa palabras clave como 'programas', 'contacto', 'admisión'.";
+
+            for (const keyword in knowledgeBase) {
+                if (lowerInput.includes(keyword)) {
+                    botResponse = knowledgeBase[keyword];
+                    break;
+                }
+            }
+            return botResponse;
+        }
+
+        function sendMessage() {
+            const userText = chatInput.value.trim();
+            if (userText === "") return;
+
+            appendMessage(userText, 'user');
+            chatInput.value = '';
+
+            // Simulate bot typing/thinking
+            setTimeout(() => {
+                const botResponse = processUserInput(userText);
+                appendMessage(botResponse, 'bot');
+            }, 500); // 0.5 second delay for bot response
+        }
+
+        chatToggleButton.addEventListener('click', toggleChat);
+        sendMessageBtn.addEventListener('click', sendMessage);
+        chatInput.addEventListener('keypress', (event) => {
+            if (event.key === 'Enter') {
+                sendMessage();
+            }
+        });
+    </script>
+</body>
 </html>
